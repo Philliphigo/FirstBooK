@@ -1,5 +1,5 @@
 let currentPage = 1;
-const totalPages = 4;
+const totalPages = 10;
 
 function showPage(pageNumber) {
     for (let i = 1; i <= totalPages; i++) {
@@ -43,5 +43,13 @@ function updateButtons(pageNumber) {
         nextButtons.forEach(button => button.style.display = 'inline-block');
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    showPage(currentPage);
+
+    const backgroundMusic = new Audio('ocean_eyes.mp3');
+    backgroundMusic.loop = true;
+    backgroundMusic.play();
+});
 
 showPage(currentPage);
