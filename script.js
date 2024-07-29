@@ -3,7 +3,7 @@ const totalPages = 10;
 
 function showPage(pageNumber) {
     for (let i = 1; i <= totalPages; i++) {
-        const page = document.getElementById(`page-${i}`);
+        const page = document.getElementById(`page${i}`);
         if (i === pageNumber) {
             page.classList.add('show');
             page.classList.remove('hide');
@@ -51,5 +51,3 @@ document.addEventListener('DOMContentLoaded', () => {
     backgroundMusic.loop = true;
     backgroundMusic.play();
 });
-
-showPage(currentPage);
