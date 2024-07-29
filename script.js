@@ -47,7 +47,7 @@ function updateButtons(pageNumber) {
 document.addEventListener('DOMContentLoaded', () => {
     showPage(currentPage);
 
-    const backgroundMusic = new Audio('ocean_eyes.mp3');
+    const backgroundMusic = new Audio('Billie Eilish – ocean eyes.mp3');
     backgroundMusic.loop = true;
     backgroundMusic.play();
 });
